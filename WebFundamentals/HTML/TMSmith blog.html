@@ -1,74 +1,115 @@
-<!DOCTYPEHTML>
+<!DOCTYPE html>
 
-<html>
-    <head>
-            <title>Blog Assignment for Coding Dojo</title>
+<html lang="en">
+    <head> <meta charset="utf-8">
+        <title>Mr. Smith's Blog</title>
+        <meta name="description" content="This is my first attempt at creating a website using html.
+        I will practice incorporating tags, inserting links and images, and focusing on writing clean code.">
     </head>
+        
+     <body>
+        <h1>Welcome to my Blog</h1>
+        <h1>Terance Smith</h1> 
+        <img src="https://www.instagram.com/p/BPTNeJ0lPRE/" alt="picture of me and my wife">
     
-    
-    <body>
-        <h1> This is my personal blog </h1>
-        <h1> My favorite basketball players: </h1>
-        <ul>
-            <li>Russell Westbrook</li>
-            <li>Lebron James </li>
-            <li>Dirk Nowitzki</li>
-            <li>Kyrie Irving</li>
-        </ul>
+        <h2>A little bit about me:</h2>
+            <div id="about me section">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. 
+                Vestibulum lacinia arcu eget nulla.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                Curabitur sodales ligula in libero. 
+                Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. 
+                Aenean quam. In scelerisque sem at dolor. Maecenas mattis. 
+                Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. 
+                Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. 
+                Quisque volutpat condimentum velit. Class
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscin. </p>
+            </div>
 
-    <form>
-            <form action="process.php" method="post">
-            <p>Please Register</p>
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name">
-        
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name">
-        
-            <label id="email">Email:</label>
-            <input type="text" id="email" name="email">
-        
-            <p>Select your gender:</p>
-            <label for="male">Male</label>
-            <input type="radio" id="male" name="gender" value="male">
-        
-            <label for="female">Female</label>
-            <input type="radio" name="gender" value="female">
-        
-            <p>Select 3 of your favorite colors:</p>
-            <label for="blue">Blue</label>
-            <input type="checkbox" id="blue" name="color" value="blue">
+        <h2>My Education</h2>
+            <div id="My Education">
+        <table>
+            <tbody>
+                <thead>
+                <tr>
+                    <th>School Name</th>
+                    <th>School Mascot</th>
+                    <th>Location</th>
+                    <th>Degree</th>
+                </tr>
+                <thead>
+                
+                
+                <tr>
+                    <td>Hirschi High School</td>
+                    <td>Huskies</td>
+                    <td>Wichita Falls, TX</td>
+                    <td>International Baccalaureate</td>
+                </tr>
+                <tr>
+                    <td>University of North Texas</td>
+                    <td>Mean Green Eagles</td>
+                    <td>Denton, TX</td>
+                    <td>B.A. in Strategic Communications</td>
+                </tr>
+                 <tr>
+                    <td>Coding Dojo</td>
+                    <td>Ninjas</td>
+                    <td>Dallas, Tx</td>
+                    <td>Two-Stack developer</td>
+                </tr>
+             <tbody>
+         
+    </table>
             
-            <label for="green">Green</label>
-            <input type="checkbox" id="green" name="color" value="green">
+            <a href="https://www.linkedin.com/feed/?trk=">Click here to visit my LinkedIn</a>
+            </div>
         
-            <label for="red">Red</label>
-            <input type="checkbox" id="red" name="color" value="red">
-            
-            <label for="black">Black</label>
-            <input type="checkbox" id="black" name="color" value="black">
+
+        <h2> My Favorite Sports Teams </h2>
+            <div id="my favorite teams">
+                <ul>
+                    <li>Philadelphia Eagles <img src="http://www.vector-logo.net/logo_preview/eps/p/Philadelphia_Eagles.png" alt="Philadelphia Eagles logo"></li>
+                    <li>Dallas Mavericks <img src="http://www.somosbasket.com/wp-content/uploads/2016/08/a-120x120.png" alt="Dallas Mavericks logo"></li>
+                    <li>Texas Rangers <img src="http://images.clipartpanda.com/ranger-clipart-dc6e9X5oi.png" alt="Texas Rangers logo"></li>
+                    <li>Texas Longhorns <img src="https://i0.wp.com/uconnhuskygames.com/wp-content/uploads/2016/06/Texas-1961-present.png?fit=300%2C169" alt="Texas Longhorns logo"></li>
+                </ul>
+            </div>
+
+            <h2>What is your favorite sport to watch?</h2>
+
+                <form>
+
+                    <label for="football">Football</label>
+                    <input type="checkbox" id="football" name="sport" value="football">
+    
+                    <label for="basketball">Basketball</label>
+                    <input type="checkbox" id="basketball" name="sport" value="basketball">
+   
+                    <label for="baseball">Baseball</label>
+                    <input type="checkbox" id="baseball" name="sport" value="baseball">
+    
+                    <label for="hockey">Hockey</label>
+                    <input type="checkbox" id="hockey" name="sport" value="hockey">
+   
+                    <label for="tennis">Tennis</label>
+                    <input type="checkbox" id="tennis" name="sport" value="tennis">
+
+                 </form>
+
+            <p>Do you have any advice to improve my blog?</p>
+            <p>Leave comments and your email address below</p>
+                <textarea name="blog advice"></textarea>
+
+                <label id="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <input type="submit" value="Click here to submit">
+
         
-            <label for="purple">Purple</label>
-            <input type="checkbox" id="purple" name="color" value="Purple">
-            
 
-            <p>Say a few words about yourself:</p>
-            <textarea name="description"></textarea>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
-
-        <label for="pw_confirm">Password Confirmation:</label>
-        <input type="password" id="pw_confirm" name="password_confirmation">
-        
-        <input type="submit" value="Click here to register">
-</form>
-    
-    
-    
-    
-    
-    
     </body>
 </html>
 
