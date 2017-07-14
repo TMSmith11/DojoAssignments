@@ -1,0 +1,74 @@
+.js_list{
+    padding-left: 30px;
+}
+
+strong.js{
+    text-decoration: underline;
+    color: green;
+}
+
+
+strong.first_word{
+    color: green;
+    text-decoration: underline;
+    
+}
+
+#header, #menu, #main, #link{
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+#container{
+    background-color: blue;
+    width:1500px;
+    height: 800px;
+    padding: 10px;
+}
+
+#header{
+    background-color: red;
+    width:1470px;
+    height:70px;
+    border-radius:15px;
+    color: white;
+}
+
+#menu{
+    background-color: lightblue;
+    width:280px;
+    height:270px;
+    border-radius:15px;
+    display:inline-block;
+    vertical-align: top;
+    text-decoration: underline;
+    color: blue;
+    padding-left:10px;
+}
+
+#main{
+    background-color:black;
+    width:1135px;
+    height:510px;
+    border-radius:15px;
+    display:inline-block;
+    vertical-align: top;
+    color:white;
+    text-align: left;
+    padding: 20px;
+}
+
+#link{
+    background-color: gray;
+    width: 1470px;
+    height: 60px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+
+
