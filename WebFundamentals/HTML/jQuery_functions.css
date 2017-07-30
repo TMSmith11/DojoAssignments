@@ -1,0 +1,37 @@
+.wrapper{
+    width: 800px;
+    height: 800px;
+    color: gray;
+    
+}
+.function_one{
+    width: 800px;
+    height: 260px;
+    border: solid 1px;
+    color: green;
+    background-color: greenyellow;
+}
+
+.function_two{
+    width: 800px;
+    height: 260px;
+    border: solid 1px;
+    color: firebrick;
+    background-color: gray;
+}
+
+.function_three{
+    width: 800px;
+    height: 260px;
+    border: solid 1px;
+    color: yellow;
+    background-color: rosybrown;
+}
+
+.f1_button{
+    background-color: orange;
+}
+
+.stankonia{
+    color: gold;
+}

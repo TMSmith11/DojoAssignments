@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head> <meta charset="utf-8">
+        <title>Terrance and jQuery functions</title>
+        <link rel="stylesheet" type="text/css" href="./jQuery_functions.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                alert("You have all the swagger on the planet");
+
+                $(".f1_button").click(function(){
+                    $(".message_1").hide();
+                });
+
+                $(".show_f1").click(function(){
+                    $(".message_1").show();
+                });
+
+                $(".words").click(function(){
+                    $(".text").slideUp('slow')
+                
+                });
+
+                $(".words_down").click(function(){
+                    $(".text").slideDown('slow');
+                });
+
+
+                $(".f2_button").click(function(){
+                    $(".albums").toggle("slow");
+                });
+
+                $(".f2_button1").click(function(){
+                     $(".teams").slideToggle("slow");
+                });
+
+                $('.albums').addClass(".stankonia");
+
+                $('.joke').before("Why did the cow cross the road?");
+                $('.joke').after('sorry for the terrible joke');
+                var title = $("em").attr("greatest_album");
+                $(".albums").text(title);
+                
+            });
+        
+
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class = "function_one">
+                <h2>Add Class</h2>
+                <button class="f1_button">Hide</button><button class="show_f1">Show</button>
+                <p class = "message_1">Hide this message when button is clicked</p>
+                <button class="words"></button><button class="words_down"></button>
+                
+                    <p class = "text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. 
+                        Praesent libero. Sed cursus ante dapibus diam. Sed nisi. 
+                        Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. 
+                        eget nulla. Class aptent taciti sociosq.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. 
+                        Praesent libero. Sed cursus ante dapibus diam. Sed nisi. 
+                        Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. 
+                        eget nulla. Class aptent taciti sociosq.
+                    </p>
+            </div>
+            <div class="function_two">
+                <h2>Slide Toggle</h2>
+                <button class="f2_button">Best Kast Albums</button>
+                <p class="albums">
+                    <p><em title='greatest_album'>Aquemini</em></p>
+                    Stankonia
+                <p>
+                <button class="f2_button1">My Teams</button>
+                <p class ="teams">
+                    Philadelphia Eagles,
+                    Dallas Mavericks,
+                    Texas Longhorns
+                </p>
+
+
+            </div>
+
+            <div class="function_three">
+                <h1>Append <button>Append</button></h1>
+                <p class="joke">To get to the udder side</p>
+
+
+            </div>
+        </div>
+
+    
+    
+    
+    
+    </body>
+</html>
