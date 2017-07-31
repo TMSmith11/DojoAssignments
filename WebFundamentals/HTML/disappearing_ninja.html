@@ -1,0 +1,29 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head><meta charset="utf-8">
+        <title>Go Birds!</title>
+        <link rel="stylesheet" type="text/css" href="./disappearing_ninja.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('img').click(function(){
+                    $(this).hide();
+                });
+            $('.restore').click(function(){
+                    $('img').show();
+                });
+            });
+        </script>
+    </head>
+    <body> 
+        <h1>Go Birds</h1>
+            <div class='logo'>
+                <img src='./Philly.jpg' id="eagle1"> <img src='./Philly.jpg' id='eagle6'>
+                <img src='./Philly.jpg' id='eagle2'> <img src='./Philly.jpg' id='eagle7'>
+                <img src='./Philly.jpg' id='eagle3'> <img src='./Philly.jpg' id='eagle8'>
+                <img src='./Philly.jpg' id='eagle4'>
+                <img src='./Philly.jpg' id='eagle5'>
+        </div>
+        <button class='restore'>Restore</button>
+    </body>
+</html>
