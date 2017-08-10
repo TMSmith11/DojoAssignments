@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Dojos</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet.css') }}">
+    </head>
+    <body>
+        <h2 class = 'ninja'>Wanna be a Ninja? Hit us up!</h2>
+        <form>
+            <p>             
+            <form action="{{ url_for('dojos_new')}}" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+            </p>             
+             
+            <p>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+            </p>
+             
+            <p>
+            <label id="email">Email:</label>
+            <input type="text" id="email" name="email">
+            </p>
+
+            <p>Favorite Teenage Mutant Ninja Turtle<select name = 'favorite turtle'>
+                <option value="Mikey">Mikey</option>
+                <option value="Donnie">Donnie</option>
+                <option value="Raplh">Ralph</option>
+                <option value="Leo">Leo</option>
+                <option value="Splinter">Splinter</option>
+            </p>
+                <input type="submit" value="Submit">
+
+
+        </form>
+    </body>
+</html>
