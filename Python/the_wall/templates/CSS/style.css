@@ -1,0 +1,102 @@
+* {
+    background-color: #E9EBF3;
+}
+
+body header {
+    border-bottom: 2px solid black;
+}
+
+.login_form {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0em 4em;
+}
+
+.register_form {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0em 4em;
+}
+
+b {
+    background-color: none;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+header p {
+    margin-left: 70%;
+    font-size: larger;
+    display: inline-block;
+}
+
+header a {
+    margin-left: 3%;
+    display: inline-block;
+}
+
+form h2 {
+    margin-left: 6%;
+}
+
+.message_textarea {
+    margin-left: 8%;
+    margin-right: auto;
+    width: 80%;
+    height: 87px;
+    display: block; 
+    resize: none;   
+    border: 3px solid black; 
+}
+
+.message_submit {
+    position: relative;
+    margin-top: 1em;
+    left: 82%;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    box-shadow: 5px 2px 0px #000000;
+}
+
+div form h3 {
+    margin-left: 10%;
+}
+
+.comment_textarea {
+    resize: none;
+    margin-left: 10%;
+    margin-right: auto;
+    width: 70%;
+    height: 80px;
+    display: block; 
+    border: 2px solid black;
+}
+
+.comment_submit {
+    position: relative;
+    margin-top: 1em;
+    left: 74%;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    box-shadow: 5px 2px 0px #000000;}
+
+.message_post { 
+    margin-left: 2%;
+    width: 95%;
+}
+
+.comment_name {
+    margin-left: 3em;
+}
+
+.comment_post {
+    margin-left: 5em;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">         <title>The Wall</title>
+    </head>
+    <body>
+        <header>
+            <h1>CodingDojo Wall</h1>
+        </header>
+        <div class='login_form'>
+            <h1>Login</h1>
+            <form action='/process_login' method='POST'>
+                <p><input type='email' placeholder='Email' name="email"></p>
+                <p><input type='password' placeholder='Password' name="password"></p>
+                <input type="submit" name="login" value="Login">
+            </form>
+        </div>
+
+        <div class='register_form'>
+            <h1>Register</h1>
+            <form action='/process_register' method='POST'>
+            <p><input type='text' placeholder='First Name' name='first_name'></p>
+            <p><input type='text' placeholder='Last Name' name='last_name'></p>
+            <p><input type='email' placeholder='Email' name='email'></p>
+            <p><input type='password' placeholder='Password' name='password'></p>
+            <p><input type='password' placeholder='Re-enter Password' name='confirm'></p>
+            <input type='submit' value='Register' value='Register'>
+            </form> 
+        </div>       
+        <div class='flash_msg'>    
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+
+                        <p>{{message}}</p>
+
+                    {% endfor %}
+                {% endif %}        
+            {% endwith %}
+        </div>
+        
+    </body>
+</html>
