@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title></title>
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
+        crossorigin="anonymous">
+    </head>
+    <body>
+        <div class='header'>
+                {% if messages %}
+                {% for messages in messages %} 
+                    <p>{{messages}}</p>
+                {% endfor %}
+                {% endif %}
+            <a href="/dashboard">Home</a> | <a href="/logout">Logout</a>
+        </div>
+        <br>
+        <div class='trip'>
+            <h1 style="color:Tomato;">Add a Trip</h1>
+            <hr>
+            <form action='/add' method='POST'>
+                {% csrf_token %}
+                <div class='form-group'>
+                    <input class='form-control' type='text' placeholder='Destination' name='destination'> 
+                </div>  
+                <div class='form-group'>   
+                    <input class='form-control' type='text' placeholder='Description' name='description'>
+                </div>
+                <div class='form-group'>
+                    <input class='form-control' type='date' placeholder='Start Date' name='start_date'>
+                </div>
+                <div class='form-group'>
+                    <input class='form-control' type='date' placeholder='End Date' name='end_date'>
+                </div>
+                <input type='submit' value='Add'>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

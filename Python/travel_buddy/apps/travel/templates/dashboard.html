@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title></title>
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
+        crossorigin="anonymous">
+    </head>
+    <body>
+        <div class= 'container'>
+            <div class='header'>
+                <nav>
+                    <a href='/logout'>Logout</a>
+                </nav>
+                <br>
+            </div>
+            <div>
+                <h1 style="color:Tomato;">Hello, {{ user.username }} </h1>
+            </div>
+            <br>
+            <div class='schedules'>
+                    <h3 style="color:Tomato;">Your Trip Schedules</h3>
+                <table>
+                    <tbody>
+                        <thead>
+                        <tr>
+                            <th>Destination</th>
+                            <th>Start Date</th> 
+                            <th>End Date</th> 
+                            <th>Plan</th> 
+                        </tr>
+                        </thead>
+                        {% for trip in trips %}
+                        <tr>
+                            <td><a href="/destination/{{trip.id}}">{{ trip.destination }}</a></td>
+                            <td>{{ trip.start_date }}</td>
+                            <td>{{ trip.end_date }}</td>
+                            <td>{{ trip.description }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <hr>
+                <h3 style="color:Tomato;">Other User's Travel Plans</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Destination</th> 
+                            <th>Start Date</th> 
+                            <th>End Date</th> 
+                            <th>Plan</th>
+                            <th>Do you want to join?</th>
+                        </tr>
+                    </thead>
+                    {% for trip in other_trips %}
+                    <tr>
+                        <td><a href="/destination/{{trip.id}}">{{ trip.destination }}</a></td>
+                        <td>{{ trip.start_date }}</td>
+                        <td>{{ trip.end_date }}</td>
+                        <td>{{ trip.description }}</td>
+                        <td><a href="/join/{{trip.id}}">join</a></td>
+                    {% endfor %}
+                    </tr>
+                </table>
+                <br>
+            </div>    
+            <div>
+                <a href='/add_travel'>Add Travel Plan</a>
+            </div>
+        </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" 
+        crossorigin="anonymous">
+        </script>
+    </body>
+</html>
